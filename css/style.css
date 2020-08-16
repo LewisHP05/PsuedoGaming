@@ -1,0 +1,27 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* -- Global Class --*/
+
+a{
+    text-decoration: none;
+}
+
+/* --- Navbar --- */
+
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;   /* -- Using height and min height to collapse navbar --*/
+    min-height: 40vh; /* --- Prevents options being hidden --- */
+    overflow: hidden;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    text-decoration: none;
+}
