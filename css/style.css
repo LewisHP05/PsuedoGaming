@@ -98,6 +98,8 @@ ul{
 
 .nav .nav-items .nav-link:hover{
     background-color: var(--lightblue);
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .nav .nav-items .nav-link:hover a{
