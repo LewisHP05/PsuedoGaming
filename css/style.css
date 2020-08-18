@@ -1,13 +1,36 @@
+/*-- PsuedoGaming Blog + Personal Website; By Lewis Pettifer --*/
+
+@import url('../css/fonts.css'); /*-- Easier to link this way as opposed to another styleshit being linked on main page, when it mainly acts as an index--*/
+
 html, body{
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
+:root{
+/*-- Font Family; Trialing to understand CSS Variables; May remove later --*/
+ --Alata: 'Alata';
+
+ /*-- --Roboto: 'Roboto-Light', cursive;            Can't get this family to work, try again later --*/
+ 
+}
+
+
 /* -- Global Class --*/
 
 a{
     text-decoration: none;
+}
+
+.flex-row{ /* -- Having this as a global means I can dynamic most elements on command --*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
 }
 
 /* --- Navbar --- */
@@ -20,8 +43,31 @@ a{
     overflow: hidden;
 }
 
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem; /*-- Using REM as it's a fraction of elements size; will look better and more flexible as apposed to fixed font size --*/
+    position: relative;
+    font-size: 1.2rem; 
+}
+
+
 .nav .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     text-decoration: none;
+    display: block; 
+    font-family: var(--Alata);
+}
+
+.nav .social{
+    padding: 1.5rem 0;
+
 }

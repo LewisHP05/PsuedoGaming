@@ -1,0 +1,13 @@
+/* -- Downloaded and using google fonts for a clean finish --*/
+
+/* -- A bolder, more significant font. Will use in navbars -- */
+@font-face {
+    font-family: Alata;
+    src: url('../fonts/Alata/Alata-Regular.ttf')
+}
+
+/*-- Main body text due to thinner nature--*/
+@font-face {
+    font-family: Roboto, sans-serif;
+    src: url('../fonts/Roboto/Roboto-Light.ttf')
+}
