@@ -66,13 +66,17 @@ button.button{
     cursor: pointer;
 }
 
+span{
+    font-family: var(--Roboto);
+}
+
 /* --- Navbar --- */
 
 .nav{
     background: white;
     padding: 0 2rem;
     height: 0rem;   /* -- Using height and min height to collapse navbar --*/
-    min-height: 7.9vh; /* --- Prevents options being hidden; Set at this height to avoid gap between navbar and site header --- */
+    min-height: 7.8vh; /* --- Prevents options being hidden; Set at this height to avoid gap between navbar and site header --- */
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -186,8 +190,45 @@ main .site-title h1,h3 {
     margin: .4rem;
 }
 
+/*-- Blog Caorusel --*/
+main .blog{
+    background: url('../assets/TwlightPortalSideBar.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 85vh;
+    width: 100%;
+}
 
+main .blog-content{
+    background-color: var(--white);
+}
 
+main .blog .blog-post{
+    padding-top: 5rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 2rem 1.5rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+main .blog-content .blog-title {
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+    padding: .7rem 2rem;
+    background: var(--lightblue);
+    margin: .5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
 /*-- End of Main Page --*/
 
 

@@ -8,4 +8,7 @@ $(document).ready(function(){
         $nav.toggleClass('collapse');
     })
 
+    /* - Carousel posts - */
+    $('.owl-carousel').owlCarousel();
+
 });
