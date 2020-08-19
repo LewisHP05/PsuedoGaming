@@ -22,9 +22,7 @@ html, body{
 
 /*-- Font Family; Trialing to understand CSS Variables; May remove later --*/
  --Alata: 'Alata';
-
- /*-- --Roboto: 'Roboto-Light', cursive;            Can't get this family to work, try again later --*/
- 
+ --Roboto: 'Roboto', sans-serif;
 }
 
 
@@ -45,13 +43,36 @@ ul{
     list-style-type: none;
 }
 
+h1{
+    font-family: var(--Roboto);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Roboto);
+}
+
+h3{
+    font-family: var(--Alata);
+    font-size: 1.7rem;
+}
+
+button.button{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-family: var(--Alata);
+    cursor: pointer;
+}
+
 /* --- Navbar --- */
 
 .nav{
     background: white;
     padding: 0 2rem;
     height: 0rem;   /* -- Using height and min height to collapse navbar --*/
-    min-height: 10vh; /* --- Prevents options being hidden --- */
+    min-height: 7.9vh; /* --- Prevents options being hidden; Set at this height to avoid gap between navbar and site header --- */
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -115,7 +136,7 @@ ul{
 }
 
 .nav .social{
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 /*-- Affects icons in navbar specifically --*/
@@ -131,10 +152,54 @@ ul{
 
 /*-- End of NavBar --*/
 
+/*-- Main Page --*/
+/* -- Header --*/ 
+
+main .site-title{
+    background: url('../assets/MyHomeTown.png');
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title .button{
+    margin: 1.5rem;
+    background: var(--lightblue);
+    
+}
+
+main .site-title .button:hover{
+    border: 1px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    transition: 1s; 
+}
+
+main .site-title h1,h3 {
+    margin: .4rem;
+}
+
+
+
+/*-- End of Main Page --*/
+
+
+
+
+
+
 /* -- Mobile Shaping --*/
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
+        min-height: 8.1vh;                  /* Stops overlap with navbar buttons appearing too early on mobile */
         
     }
 
