@@ -9,6 +9,11 @@ $(document).ready(function(){
     })
 
     /* - Carousel posts - */
-    $('.owl-carousel').owlCarousel();
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        dots: false,
+        nav: true,
+        navText: [$('.owl-navigation .owl-nav-prev'),$('.owl-navigation .owl-nav-next')] /* fucking variables ughhhhhhhhhhhhhhhh */
+    });
 
 });

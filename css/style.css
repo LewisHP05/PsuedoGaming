@@ -212,7 +212,7 @@ main .blog-post .blog-content{
     flex-direction: column;
     text-align: center;
     width: 80%;
-    margin: 2rem 1.5rem;
+    margin: 3rem 3rem;
     box-shadow: 0 15px 20px rgba(0,0,0,0.2);
 }
 
@@ -229,6 +229,21 @@ main .blog-content .btn-blog {
 main .blog-content span{
     display: block;
 }
+
+section .container .owl-nav{
+    position: absolute;
+    top: 6.5%;
+    margin:0% auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev{ 
+
+}
+
+.owl-nav .owl-next .owl-nav-next{ 
+
+}
 /*-- End of Main Page --*/
 
 
@@ -242,6 +257,10 @@ main .blog-content span{
         flex-direction: column;
         min-height: 8.1vh;                  /* Stops overlap with navbar buttons appearing too early on mobile */
         
+    }
+
+    main .blog-post .blog-content{  /* Scrollbar don't sit right with normal window settings, here to adjust margins and nothing else lmao*/
+        margin: 3rem 2rem;
     }
 
     .nav .toggle-collapse {
